@@ -1,68 +1,41 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# React- Animate with GSAP (Green Sock) and scrolling
 
-## Available Scripts
+This is a sample template for using gsap (green sock) animations in combination with React and scrolling. It is VERY basic and simple. It's merely meant to give you the idea of how to do it so that you can start working on your own.
 
-In the project directory, you can run:
+## Motivation
 
-### `npm start`
+As I was trying to animate using an onScroll technique, I started searching for different tutorials and resources related to GSAP and Green Sock and React. Mostly what I found were tutorials and threads on the [Green Sock forum ](https://greensock.com/forums/). I found a lot of stuff on using onScroll with Vanilla JavaScript. But there is a huge gap when it comes to using GSAP with React. This tutorial is small attempt to help fill that gap.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Demo
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+[CodeSandBox Demo](https://codesandbox.io/s/react-gsap-animations-onscroll-mxhd2?file=/src/index.css)
 
-### `npm test`
+## Resources
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Here are a few helpful websites that I used while creating this project:
 
-### `npm run build`
+- https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
+- https://usehooks.com/useOnScreen/
+- https://greensock.com/docs/
+- https://www.youtube.com/watch?v=exucYUoiJLw&list=PLDWxIdtkzLLtNSpHJSq7dzDvrEpmp2MEC&index=2&t=646s
+- https://codepen.io/sdras/pen/rNazvmL
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Get Started
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Run ``` npm install ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Run ``` npm start ```
 
-### `npm run eject`
+Go to ``` http://localhost:3000 ```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Created By
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Aaron Blum
+blumaa@gmail.com
+2020
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+[My Portfolio](aaronblum.co)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+[My Github](https://github.com/blumaa)
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+[My LinkedIn](https://www.linkedin.com/in/aaron-blum-0904/)

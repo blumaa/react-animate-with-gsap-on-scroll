@@ -4,41 +4,30 @@ import SliderBox2 from "./SliderBox2";
 import DummyText from "./DummyText";
 // Usage
 function App() {
-  // Ref for the element that we want to detect whether on screen
   const sectionOneRef = useRef();
   const sectionTwoRef = useRef();
-  // Call the hook passing in ref and root margin
-  // In this case it would only be considered onScreen if more ...
-  // ... than 300px of element is visible.
+
   const onScreenSectionOne = useOnScreen(sectionOneRef, "-50%");
   const onScreenSectionTwo = useOnScreen(sectionTwoRef, "-300px");
 
   return (
     <div>
-      <div className="navbar-container">
-        <div className="nav">
-          <a>Page One</a>
-          <a>Page Two</a>
-          <a>Page Three</a>
-          <a>Page Four</a>
-          <a>Page Five</a>
-        </div>
-      </div>
       <div id="section-home">
-        <h1>Scroll down to next section 👇</h1>
+      <h1>Scroll down to see the animation 👇</h1>
         <DummyText />
       </div>
       <div className="section-one" ref={sectionOneRef}>
-        {onScreenSectionOne ? <SliderBox /> : null}
-      </div>
-      <div
-      className="section-two"
-        ref={sectionTwoRef}
-      >
-        {onScreenSectionTwo ? (
-           <SliderBox2 />
+        {onScreenSectionOne ? (
+          <SliderBox />
         ) : (
-          <h1>Scroll down 300px from the top of this section 👇</h1>
+          <h1>Scroll down to see the animation 👇</h1>
+        )}
+      </div>
+      <div className="section-two" ref={sectionTwoRef}>
+        {onScreenSectionTwo ? (
+          <SliderBox2 />
+        ) : (
+          <h1>Scroll down to see the animation 👇</h1>
         )}
       </div>
     </div>

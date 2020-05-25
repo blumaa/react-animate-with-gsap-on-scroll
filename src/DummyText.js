@@ -124,35 +124,7 @@ const DummyText = () => {
           tempor nunc. Quisque vel tincidunt sem, sit amet egestas lectus. Morbi
           sodales placerat lacus vitae faucibus. Ut rutrum felis quis augue
           accumsan, at bibendum tellus pellentesque. Curabitur scelerisque metus
-          tellus, in sollicitudin nisi convallis ac. Nulla non faucibus eros.
-          Sed vel maximus sapien, vitae luctus ipsum. Donec vehicula ultricies
-          nibh, nec sagittis nisl vulputate id. Etiam nec mi vitae massa
-          sollicitudin posuere. Aliquam erat volutpat. Aenean quis vulputate
-          tortor, sit amet iaculis risus. Nullam convallis, enim ac suscipit
-          ultricies, leo lacus hendrerit felis, et sagittis diam diam ac orci.
-          Vivamus lacinia, mi at tristique tempor, purus velit dignissim elit,
-          sed fringilla nunc neque vitae massa. Etiam ipsum metus, scelerisque
-          quis nulla vel, cursus commodo metus. Quisque auctor est dictum,
-          congue arcu et, facilisis urna. Interdum et malesuada fames ac ante
-          ipsum primis in faucibus. Donec fringilla ligula vitae orci iaculis
-          interdum. Nulla vel viverra nulla. Sed varius sodales tincidunt. Nulla
-          vitae molestie orci. Sed fringilla justo a mi aliquam ultrices.
-          Phasellus fringilla sagittis velit. Pellentesque ut tincidunt ante,
-          sit amet vestibulum velit. Praesent non scelerisque massa. Vestibulum
-          fringilla urna dui, eu laoreet nisl vulputate eget. Morbi mattis
-          molestie justo a tristique. Nulla ultricies pellentesque quam ut
-          pulvinar. Sed nec varius diam. Quisque egestas iaculis felis, eget
-          scelerisque ante eleifend ac. Vestibulum nunc massa, luctus id
-          condimentum eu, aliquet eleifend nunc. Nam mollis dapibus mauris, ac
-          mattis arcu fringilla nec. Proin tristique sem orci, ac finibus magna
-          condimentum vitae. Ut tincidunt eget justo a ultricies. Nunc
-          venenatis, dolor et suscipit blandit, nunc magna molestie massa, at
-          cursus diam magna sit amet nulla. Integer congue, est sit amet
-          interdum rhoncus, eros est pretium ipsum, sit amet tempus felis ipsum
-          ac sem. Class aptent taciti sociosqu ad litora torquent per conubia
-          nostra, per inceptos himenaeos. Mauris elementum, velit tempor
-          tincidunt porta, diam mauris faucibus erat, et consectetur velit enim
-          non sapien.
+          tellus, in sollicitudin nisi convallis ac. 
         </p>
     )
 }
