@@ -1,7 +1,5 @@
-import React, { useState, useEffect, useRef } from "react";
-import SliderBox from "./SliderBox";
-import SliderBox2 from "./SliderBox2";
-import DummyText from "./DummyText";
+import React, { useState, useEffect, useRef } from 'react';
+
 // Usage
 function App() {
   // Ref for the element that we want to detect whether on screen
@@ -10,8 +8,8 @@ function App() {
   // Call the hook passing in ref and root margin
   // In this case it would only be considered onScreen if more ...
   // ... than 300px of element is visible.
-  const onScreenSectionOne = useOnScreen(sectionOneRef, "-50%");
-  const onScreenSectionTwo = useOnScreen(sectionTwoRef, "-300px");
+  const onScreenSectionOne = useOnScreen(sectionOneRef, '-300px');
+  const onScreenSectionTwo = useOnScreen(sectionTwoRef, '-300px');
 
   return (
     <div>
@@ -24,19 +22,35 @@ function App() {
           <a>Page Five</a>
         </div>
       </div>
-      <div id="section-home">
+      <div style={{ height: '100vh' }}>
         <h1>Scroll down to next section 👇</h1>
-        <DummyText />
-      </div>
-      <div className="section-one" ref={sectionOneRef}>
-        {onScreenSectionOne ? <SliderBox /> : null}
       </div>
       <div
-      className="section-two"
+        ref={sectionOneRef}
+        style={{
+          height: '100vh',
+        }}
+      >
+        {onScreenSectionOne ? (
+          <div>
+            <h1>Hey I'm on the screen</h1>
+          </div>
+        ) : (
+          null
+        )}
+      </div>
+      <div
         ref={sectionTwoRef}
+        style={{
+          height: '100vh',
+          backgroundColor: onScreenSectionTwo ? '#23cebd' : '#efefef'
+        }}
       >
         {onScreenSectionTwo ? (
-           <SliderBox2 />
+          <div>
+            <h1>Hey I'm on the screen</h1>
+            <img src="https://i.giphy.com/media/ASd0Ukj0y3qMM/giphy.gif" />
+          </div>
         ) : (
           <h1>Scroll down 300px from the top of this section 👇</h1>
         )}
@@ -46,7 +60,7 @@ function App() {
 }
 
 // Hook
-function useOnScreen(ref, rootMargin = "0px") {
+function useOnScreen(ref, rootMargin = '0px') {
   // State and setter for storing whether element is visible
   const [isIntersecting, setIntersecting] = useState(false);
 
@@ -57,7 +71,7 @@ function useOnScreen(ref, rootMargin = "0px") {
         setIntersecting(entry.isIntersecting);
       },
       {
-        rootMargin,
+        rootMargin
       }
     );
     if (ref.current) {
@@ -71,4 +85,4 @@ function useOnScreen(ref, rootMargin = "0px") {
   return isIntersecting;
 }
 
-export default App;
+export default App
